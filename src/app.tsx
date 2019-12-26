@@ -1,6 +1,6 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import Index from './pages/index'
-
+import './assets/fonts/iconfont.css'
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -10,7 +10,6 @@ import './app.scss'
 // }
 
 class App extends Component {
-
   /**
    * 指定config的类型声明为: Taro.Config
    *
@@ -20,30 +19,29 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      "pages/index/index",
+      "pages/reserve/index"
     ],
     window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      backgroundTextStyle: "light",
+      navigationBarBackgroundColor: "#c62f2f",
+      navigationBarTitleText: "WeChat",
+      navigationBarTextStyle: "white"
     }
-  }
+  };
 
-  componentDidMount () {}
+  componentDidMount() {}
 
-  componentDidShow () {}
+  componentDidShow() {}
 
-  componentDidHide () {}
+  componentDidHide() {}
 
-  componentDidCatchError () {}
+  componentDidCatchError() {}
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
-    return (
-      <Index />
-    )
+  render() {
+    return <Index />;
   }
 }
 

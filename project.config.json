@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "barbers",
 	"description": "创意美发",
-	"appid": "touristappid",
+	"appid": "wxbbefae72380bc8d7",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
